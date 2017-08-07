@@ -2,7 +2,21 @@
 
 // общий конфиг для всего приложения
 $config = array(
-    // ...
+    // настройки для работы с базой
+    'db' => array(
+        'host'     => 'localhost',
+        'port'     => 3306,
+        'username' => 'user',
+        'password' => 'password',
+        'dbname'   => 'database',
+        'charset'  => 'utf8',
+    ),
+
+    // идентификатор города в базе
+    'cityId' => null,
+
+    // шаблон отображения
+    'layout' => 'city',
 );
 
 //  имя домена
