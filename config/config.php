@@ -25,7 +25,5 @@ $host = $_SERVER['SERVER_NAME'];
 $hostConfigFile = __DIR__.'/'.$host.'.php';
 if (is_file($hostConfigFile))
     $hostConfig = include($hostConfigFile);
-else
-    throw new \Exception('Не задана конфигурация для домена "' . $host . '"');
 
 return array_merge($config, $hostConfig); // объединить конфиги
